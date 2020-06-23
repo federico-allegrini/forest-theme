@@ -24,11 +24,126 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="app.css" />
-
     <title>Forest Theme</title>
   </head>
 
   <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
+    >
+      <a href="#" class="navbar-brand">FOREST</a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="navbar-link">
+            <a href="" class="nav-link">HOME</a>
+          </li>
+          <li class="navbar-link">
+            <a href="" class="nav-link">ABOUT</a>
+          </li>
+          <li class="navbar-link">
+            <a href="" class="nav-link">INFO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+      <div class="row mx-0 align-items-center">
+        <div class="col-lg-6 d-none d-lg-block px-0">
+          <div id="headingGroup" class="text-white text-center my-4">
+            <h2>FOREST<span>/</span>THEME</h2>
+            <h2>FOREST<span>/</span>THEME</h2>
+            <h2>FOREST<span>/</span>THEME</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <img src="imgs/forest1.jpg" alt="" class="img-fluid" />
+          <div class="heading-shadow d-lg-none"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0">
+      <div class="row mx-0 align-items-center">
+        <div class="col-md-6 order-2 order-md-1 px-0">
+          <img src="imgs/forest2.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 order-1 order-md-2 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb my-5 my-md-0">
+              <h2 class="mt-2">FOREST THEME</h2>
+              <img
+                src="imgs/tree_icon.png"
+                alt=""
+                class="img-fluid tree-icon d-none d-lg-inline mb-3"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae eaque cum, illo expedita ad quidem architecto a rem
+                similique inventore eligendi vero incidunt numquam nisi sapiente
+                molestiae voluptatem sit atque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-0 align-items-center">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb my-5 my-md-0">
+              <h2 class="mt-2">FOREST THEME</h2>
+              <img
+                src="imgs/tree_icon.png"
+                alt=""
+                class="img-fluid tree-icon d-none d-lg-inline mb-3"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae eaque cum, illo expedita ad quidem architecto a rem
+                similique inventore eligendi vero incidunt numquam nisi sapiente
+                molestiae voluptatem sit atque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <img src="imgs/forest3.jpg" alt="" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row mx-0 align-items-center">
+        <div class="col-md-6 order-2 order-md-1 px-0">
+          <img src="imgs/forest4.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 order-1 order-md-2 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb my-5 my-md-0">
+              <h2 class="mt-2">FOREST THEME</h2>
+              <img
+                src="imgs/tree_icon.png"
+                alt=""
+                class="img-fluid tree-icon d-none d-lg-inline mb-3"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae eaque cum, illo expedita ad quidem architecto a rem
+                similique inventore eligendi vero incidunt numquam nisi sapiente
+                molestiae voluptatem sit atque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -46,5 +161,15 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      var navbar = document.querySelector("#mainNavbar");
+      var toggleNavbarBackground = () =>
+        this.scrollY > navbar.clientHeight
+          ? navbar.classList.add("scrolled")
+          : navbar.classList.remove("scrolled");
+      window.addEventListener("scroll", toggleNavbarBackground);
+    </script>
   </body>
 </html>

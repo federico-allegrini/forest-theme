@@ -1,0 +1,116 @@
+:root {
+  --color0: #ffffff;
+  --color1: #afb19f;
+  --color2: #70836f;
+  --color3: #394b59;
+  --transition: 0.3s;
+}
+
+body {
+  background: var(--color1);
+  font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar {
+  transition: background var(--transition);
+}
+
+#mainNavbar,
+#mainNavbar .navbar-brand,
+#mainNavbar .nav-link {
+  font-size: 1.5rem;
+}
+
+#mainNavbar .navbar-brand {
+  color: var(--color3);
+  font-weight: 500;
+}
+
+#mainNavbar .nav-link {
+  color: var(--color0);
+  font-weight: 100;
+  transition: color var(--transition);
+}
+
+#mainNavbar .nav-link:hover {
+  color: var(--color3);
+}
+
+#mainNavbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#mainNavbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  transition: background-image var(--transition);
+}
+
+#mainNavbar .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#mainNavbar.scrolled {
+  background: var(--color3);
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(57, 75, 89, 0.6);
+  -moz-box-shadow: 0px 7px 0px 0px rgba(57, 75, 89, 0.6);
+  box-shadow: 0px 7px 0px 0px rgba(57, 75, 89, 0.6);
+}
+
+#mainNavbar.scrolled .navbar-brand,
+#mainNavbar.scrolled .nav-link:hover {
+  color: var(--color2);
+}
+
+#headingGroup h2 {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+#headingGroup span {
+  color: var(--color3);
+  letter-spacing: 4px;
+}
+
+.heading-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 5px 75px 200px -110px #131313;
+  top: 0;
+  left: 0;
+}
+
+.blurb h2 {
+  color: var(--color3);
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.blurb p {
+  color: var(--color2);
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.tree-icon {
+  max-width: 104px;
+}
+
+@media (max-width: 992px) {
+  #mainNavbar .navbar-brand {
+    color: var(--color2);
+  }
+  #mainNavbar .nav-link:hover {
+    color: var(--color2);
+  }
+}
+
+@media (max-width: 1200px) {
+  #headingGroup h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
